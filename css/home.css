@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+:root{
+    --primary-font-color: rgba(19, 18, 18, 0.818);
+    --font-family: 'Comfortaa';
+    --secundary-font-color: rgb(0, 85, 255);
+    --linear-1: linear-gradient(to bottom, aliceblue, rgb(21, 130, 185));
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--linear-1);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 98%;
+    background-color: rgb(244, 236, 227);
+    box-shadow: 5px 0px 10px rgb(8, 185, 238);
+    border-radius: 15px 0px 15px 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    font-family: var(--font-family);
+}
+
+.header h1{
+    margin-left: 2rem;
+    color: var(--secundary-font-color);
+}
+
+.info a{
+    text-decoration: none;
+    margin: 15px;
+    color: var(--primary-font-color);
+    font-size: 17px;
+    font-weight: 900;
+    position: relative;
+}
+
+.info a:hover{
+    color: rgb(0, 136, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.underline{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(31, 29, 29, 0.097);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    height: 90%;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.title h1{
+    font-family: 'Comfortaa';
+}
+
+.title span{
+    color: rgb(0, 76, 255);
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74%;
+}
+
+.copy p{
+    width: 100%;
+    font-family: 'Comfortaa';
+    font-weight: 600;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.button button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-font-color);
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    font-family: 'Comfortaa';
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.button a{
+    text-decoration: none;
+    transition: all 5s ease-in-out;
+}
+
+.button button:hover{
+    transform: translateY(10px);
+    background: linear-gradient(to bottom left, rgba(0, 70, 250, 1), rgba(5, 216, 244, 1));
+    box-shadow: 0px 0px 15px rgb(8, 185, 238);
+}
+
+@keyframes slidein{
+    from {top: 0px;}
+    to {top: 20px;}
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width: 1300px), (max-width: 1000px){
+    .img{
+        display: none;
+    }
+
+    .text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title{
+        display: flex;
+        height: 40%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .title h1{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 20%;
+    }
+
+    .info a{
+        margin: 3px;
+        font-size: 15px;
+    }
+
+    .header h1{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .button{
+        margin-top: 1rem;
+    }
+
+    .button input{
+        margin: 3px;
+    }
+
+    .button button{
+        animation: none;
+        margin: 10px;
+        width: 90%;
+    }
+}
+

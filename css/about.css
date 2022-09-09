@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+:root{
+    --primary-font-color: rgba(19, 18, 18, 0.818);
+    --font-family: 'Comfortaa';
+    --secundary-font-color: rgb(0, 85, 255);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, aliceblue, rgb(21, 130, 185));
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 98%;
+    background-color: rgb(244, 236, 227);
+    box-shadow: 5px 0px 10px rgb(8, 185, 238);
+    border-radius: 15px 0px 15px 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    font-family: var(--font-family);
+}
+
+.header h1{
+    margin-left: 2rem;
+    color: var(--secundary-font-color);
+}
+
+.info a{
+    text-decoration: none;
+    margin: 15px;
+    color: var(--primary-font-color);
+    font-size: 17px;
+    font-weight: 900;
+    position: relative;
+}
+
+.info a:hover{
+    color: rgb(0, 136, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.underline{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(31, 29, 29, 0.097);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    margin-top: 2rem;
+    font-family: 'Comfortaa';
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.infos{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infos p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+}
+
+.infos span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--secundary-font-color);
+}
+
+@media (min-width: 1300px), (max-width: 1000px){
+
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 20%;
+    }
+
+    .main{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .info a{
+        margin: 3px;
+        font-size: 15px;
+    }
+
+    .header h1{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 8px;
+        width: 90%;
+    }
+
+    .infos{
+        font-size: 13px;
+    }
+
+    .infos span{
+        text-align: center;
+        font-size: 15px;
+        width: auto;
+    }
+
+    .infos p{
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
